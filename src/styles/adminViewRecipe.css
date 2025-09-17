@@ -1,0 +1,103 @@
+/* src/styles/adminViewRecipe.css */
+
+.admin-view-recipe-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.admin-view-recipe-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #222;
+}
+
+.recipe-image {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-view-recipe-container p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.admin-view-recipe-container strong {
+  color: #111;
+}
+
+.admin-view-recipe-container h3 {
+  margin-top: 24px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  color: #555;
+}
+
+.back-button {
+  margin-top: 30px;
+  display: block;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+.admin-view-recipe-container ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.instructions-section {
+  margin-top: 1rem;
+}
+
+.instruction-block {
+  margin-bottom: 1.5rem;
+}
+
+.instruction-block h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.instruction-block ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.instruction-block li {
+  margin-bottom: 0.5rem;
+}

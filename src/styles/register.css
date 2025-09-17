@@ -1,0 +1,150 @@
+/* register.css */
+
+.register-container {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 35px 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  margin-bottom: 18px;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.register-form input,
+.register-form select {
+  padding: 10px;
+  margin-top: 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #44ec98;
+  outline: none;
+}
+
+/* Checkbox (Show password, Terms) */
+.register-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.register-form .checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.register-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #218838;
+}
+
+.register-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Feedback Messages */
+.error-message,
+.success-message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Nav Link to Login */
+.nav-link {
+  display: block;
+  color: #000503;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #585a59;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .register-container {
+    margin: 50px 20px;
+    padding: 25px 20px;
+  }
+
+  .register-form label {
+    font-size: 14px;
+  }
+
+  .register-form input,
+  .register-form select {
+    font-size: 15px;
+  }
+
+  .register-form button {
+    font-size: 15px;
+  }
+}

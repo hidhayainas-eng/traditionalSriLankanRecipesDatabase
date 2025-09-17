@@ -1,0 +1,80 @@
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #009688;
+  letter-spacing: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #44ec98;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:disabled {
+  background-color: #80cbc4;
+  cursor: not-allowed;
+}
+
+.error-message,
+.success-message {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.error-message {
+  color: #d32f2f;
+}
+
+.success-message {
+  color: #388e3c;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 10px;
+}
